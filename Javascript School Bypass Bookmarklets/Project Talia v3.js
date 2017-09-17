@@ -6,11 +6,11 @@ if (a.length == 0){
   exit();
 }
 
-if (a.indexOf("www.") == -1){
+if (a.indexOf("www.") == -1 && a.indexOf("http") == -1){
   a = "www." + a;
 }
 
-if (a.indexOf(".com") == -1){
+if (a.indexOf(".com") == -1 && a.indexOf(".org") == -1 && a.indexOf(".net") == -1){
   a = a + ".com"
 }
 
